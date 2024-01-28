@@ -1,32 +1,35 @@
 ﻿<Properties StartupConfiguration="{18F5086A-CFF2-46E9-BE2A-38D51A719821}|http">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="COMP2139/Views/Home/About.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="COMP2139/Controllers/ProjectsController.cs">
     <Files>
       <File FileName="Comp2139/Properties/launchSettings.json" Line="3" Column="36" />
       <File FileName="Comp2139/Controllers/HomeController.cs" />
-      <File FileName="Comp2139/Views/Home/About.cshtml" Line="1" Column="1" />
+      <File FileName="Comp2139/Views/Home/About.cshtml" />
       <File FileName="Comp2139/Views/Home/Index.cshtml" />
-      <File FileName="Comp2139/Views/Shared/_Layout.cshtml" />
-      <File FileName="Comp2139/Models/Project.cs" />
-      <File FileName="Comp2139/Controllers/ProjectsController.cs" />
+      <File FileName="Comp2139/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Comp2139/Models/Project.cs" Line="1" Column="1" />
+      <File FileName="Comp2139/Controllers/ProjectsController.cs" Line="40" Column="2" />
       <File FileName="Comp2139/Views/Shared/_Layout.cshtml.css" />
-      <File FileName="COMP2139/Program.cs" Line="23" Column="1" />
+      <File FileName="COMP2139/Program.cs" />
       <File FileName="Comp2139/Views/Project/Create.cshtml" Line="1" Column="1" />
       <File FileName="Comp2139/Views/Project/Details.cshtml" Line="1" Column="1" />
       <File FileName="Comp2139/Views/Project/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Comp2139/Models/ErrorViewModel.cs" />
+      <File FileName="Comp2139/Views/_ViewImports.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Comp2139" expanded="True">
-            <Node name="Comp2139_Labs" expanded="True">
-              <Node name="Controllers" expanded="True" />
+          <Node name="Comp2139">
+            <Node name="Comp2139_Labs">
+              <Node name="Controllers" expanded="True">
+                <Node name="ProjectsController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="About.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Project" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -34,8 +37,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Comp2139__Labs PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Comp2139__Labs PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

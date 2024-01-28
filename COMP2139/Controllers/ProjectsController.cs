@@ -1,25 +1,33 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using COMP2139_Labs.Controllers;
-using COMP2139_Labs.Models;
+﻿using COMP2139_Labs.Models;
+using Microsoft.AspNetCore.Mvc;
 
-namespace COMP2139_Labs.Controllers
+namespace Labs.Controllers
 {
-    public class ProjectsController : Controller
+    public class ProjectController : Controller
     {
         [HttpGet]
         public IActionResult Index()
         {
             var projects = new List<Project>()
             {
-                new Project {ProjectId = 1, Name = "Project 1", Description = "My First Project"} //we define a project
+                new Project { ProjectId = 1, Name = "Project 1", Description = "This is my first project"}
             };
 
-            return View(projects); //we pass the project to the view
+            return View(projects);
         }
 
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            var project = new Project { ProjectId = id, Name = "Project " + id, Description = "Details of project " + id };
+            return View(project);
+        }
 
-
-
+        [HttpPost]
+        public IActionResult Create(Project project)
+        {
+            return RedirectToAction("Index");
+        }
 
         [HttpGet]
         public IActionResult Create()
@@ -28,23 +36,5 @@ namespace COMP2139_Labs.Controllers
         }
 
 
-        [HttpPost]
-        public IActionResult Create(Project project)
-        {
-            return RedirectToAction("Index");
-
-        }
-
-
-
-
-
-
-        [HttpGet]
-        public IActionResult Details(int id)
-        {
-            var project = new Project { ProjectId = id, Name = "Project " + id, Description = "Details of the project " + id };
-            return View(project);
-        }
     }
 }
