@@ -60,3 +60,13 @@
 /Users/melinabehzadi/Desktop/Computer Science/4th Semester/Web Application Development/COMP2139-W2024/COMP2139-Labs/COMP2139-Labs/obj/Debug/net7.0/COMP2139-Labs.pdb
 /Users/melinabehzadi/Desktop/Computer Science/4th Semester/Web Application Development/COMP2139-W2024/COMP2139-Labs/COMP2139-Labs/obj/Debug/net7.0/COMP2139-Labs.genruntimeconfig.cache
 /Users/melinabehzadi/Desktop/Computer Science/4th Semester/Web Application Development/COMP2139-W2024/COMP2139-Labs/COMP2139-Labs/obj/Debug/net7.0/ref/COMP2139-Labs.dll
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.AssemblyInfoInputs.cache
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.AssemblyInfo.cs
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.csproj.CoreCompileInputs.cache
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.MvcApplicationPartsAssemblyInfo.cache
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.RazorAssemblyInfo.cache
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.RazorAssemblyInfo.cs
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.dll
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/refint/COMP2139-Labs.dll
+/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/Debug/net7.0/COMP2139-Labs.pdb
