@@ -1,0 +1,57 @@
+﻿@model COMP2139_Labs.Areas.ProjectManagement.Models.ProjectTask
+
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<style>
+    .task-details {
+        max-width: 800px;
+        margin: 2rem auto;
+        background: #f8f9fa;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+
+        .task-details .card-header {
+            background-color: #28a745;
+            color: #ffffff;
+            font-size: 2rem;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+            padding: 15px 20px;
+        }
+
+        .task-details dl dt {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        .task-details dl dd {
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+    .btn-custom {
+        margin-right: 10px;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+</style>
+
+<div class="task-details">
+    <div class="card-header">Task Details</div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Title</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Title)</dd>
+
+            <dt class="col-sm-3">Description</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+        </dl>
+
+        <a asp-area="ProjectManagement" asp-controller="Tasks" asp-action="Edit" asp-route-id="@Model.ProjectTaskId" class="btn btn-success btn-custom">Edit</a>
+        <a asp-area="ProjectManagement" asp-controller="Tasks" asp-action="Index" asp-route-projectId="@Model.ProjectId" class="btn btn-secondary btn-custom">Back to List</a>
+    </div>
+</div>

@@ -1,20 +1,70 @@
 ﻿@{
-
+    Layout = "_Layout"; // Ensure this matches the name of your layout file
     var Name = "Oscar Piedrasanta Diaz";
     var studentID = "101061602";
     var courseCode = "COMP2139";
 }
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Welcome to my about page</title>
-    </head>
-    <body>
-        <h1>About Me</h1>
-        <p> Name: @Name</p>
-        <p> ID: @studentID</p>
-        <p> Course Code: @courseCode</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My About Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
 
-    </body>
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start; /* Align items at the start of the container to move it up */
+            padding-top: 10vh; /* Add some padding at the top to push it down slightly from the very top */
+        }
+
+        .about-card {
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin: 15px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .icon {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="about-card">
+            <h1>About Me</h1>
+            <p><i class="fas fa-user icon"></i><strong>Name:</strong> @Name</p>
+            <p><i class="fas fa-id-card icon"></i><strong>Student ID:</strong> @studentID</p>
+            <p><i class="fas fa-book icon"></i><strong>Course Code:</strong> @courseCode</p>
+        </div>
+    </div>
+</body>
 </html>

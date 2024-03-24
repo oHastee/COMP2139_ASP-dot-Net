@@ -1,0 +1,60 @@
+﻿@model COMP2139_Labs.Areas.ProjectManagement.Models.Project
+@{
+    ViewData["Title"] = "Edit Project";
+}
+
+<h2>Edit Project</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+
+    <!-- Hidden input for ProjectId -->
+    <input type="hidden" asp-for="ProjectId" />
+
+    <!-- Input field for Name -->
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <!-- Input field for Description using textarea for multi-line input -->
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <!-- Input field for StartDate -->
+    <div class="form-group">
+        <label asp-for="StartDate"></label>
+        <input asp-for="StartDate" class="form-control" type="date" />
+        <span asp-validation-for="StartDate" class="text-danger"></span>
+    </div>
+
+    <!-- Input field for EndDate -->
+    <div class="form-group">
+        <label asp-for="EndDate"></label>
+        <input asp-for="EndDate" class="form-control" type="date" />
+        <span asp-validation-for="EndDate" class="text-danger"></span>
+    </div>
+
+    <!-- Input field for Status -->
+    <!-- Assuming Status is a simple text input, consider dropdown if it has fixed values -->
+    <div class="form-group">
+        <label asp-for="Status"></label>
+        <select asp-for="Status" class="form-control">
+            <option value="">Please select a status</option>
+            <option value="New" selected="@Model.Status == " New"">New</option>
+            <option value="InProgress" selected="@Model.Status == " InProgress"">In Progress</option>
+            <option value="Completed" selected="@Model.Status == " Completed"">Completed</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <!-- Submit button to save changes -->
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Index" class="btn btn-secondary">Back to Projects</a>
+</form>
+
+

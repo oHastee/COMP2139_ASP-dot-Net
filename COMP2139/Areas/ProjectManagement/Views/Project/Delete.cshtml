@@ -1,0 +1,105 @@
+﻿@model COMP2139_Labs.Areas.ProjectManagement.Models.Project
+
+@{
+    ViewData["Title"] = "Delete Project";
+}
+
+<style>
+    .delete-project-container {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        max-width: 700px;
+        margin: 5vh auto;
+    }
+
+    .delete-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #dc3545; /* Intense color to convey urgency */
+    }
+
+    .delete-warning {
+        color: #dc3545; /* Bootstrap danger color */
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+
+    .project-info {
+        background-color: #f2f2f2;
+        padding: 25px;
+        border-left: 5px solid #dc3545; /* Accent color */
+        border-radius: 8px;
+        margin-bottom: 40px; /* Added margin for breathing space */
+    }
+
+        .project-info dt {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .project-info dd {
+            font-size: 1.4rem;
+            color: #222;
+            margin-bottom: 15px; /* Added spacing for readability */
+        }
+
+    .action-buttons {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center; /* Centering the buttons for a focused action call */
+        gap: 20px; /* Adding gap for spacing between buttons */
+    }
+
+    .btn {
+        font-size: 1.2rem; /* Larger font size for readability */
+        padding: 12px 30px; /* Larger padding for a substantial button presence */
+        border-radius: 8px; /* Rounded corners for a modern look */
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for button interaction */
+    }
+
+    .btn-danger-custom {
+        background-color: #dc3545;
+        color: #fff;
+        border: 2px solid transparent;
+    }
+
+        .btn-danger-custom:hover, .btn-danger-custom:focus {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+    .btn-secondary-custom {
+        background-color: #6c757d;
+        color: #fff;
+        border: 2px solid transparent;
+    }
+
+        .btn-secondary-custom:hover, .btn-secondary-custom:focus {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+</style>
+
+<div class="delete-project-container">
+    <h1 class="delete-heading">Delete Project</h1>
+    <p class="delete-warning">Are you sure you want to delete this project?</p>
+    <dl class="project-info">
+        <dt>Name</dt>
+        <dd>@Model.Name</dd>
+        <dt>Description</dt>
+        <dd>@Model.Description</dd>
+        <dt>Status</dt>
+        <dd>@Model.Status</dd>
+        <!-- Add other properties if needed -->
+    </dl>
+    <div class="action-buttons">
+        <form asp-action="DeleteConfirmed" asp-route-id="@Model.ProjectId" method="post">
+            <button type="submit" class="btn btn-danger-custom">Confirm Delete</button>
+        </form>
+        <a asp-action="Index" class="btn btn-secondary-custom">Cancel</a>
+    </div>
+</div>
