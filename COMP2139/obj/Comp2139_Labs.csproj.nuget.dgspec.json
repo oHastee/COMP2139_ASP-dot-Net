@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139_Labs.csproj": {}
+    "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Comp2139_Labs.csproj": {}
   },
   "projects": {
-    "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139_Labs.csproj": {
+    "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Comp2139_Labs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139_Labs.csproj",
+        "projectUniqueName": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Comp2139_Labs.csproj",
         "projectName": "Comp2139_Labs",
-        "projectPath": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139_Labs.csproj",
+        "projectPath": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Comp2139_Labs.csproj",
         "packagesPath": "/Users/oscarpiedrasantadiaz/.nuget/packages/",
-        "outputPath": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/obj/",
+        "outputPath": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/oscarpiedrasantadiaz/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,40 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

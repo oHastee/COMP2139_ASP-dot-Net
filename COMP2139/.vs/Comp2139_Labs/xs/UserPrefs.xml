@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{2F18EFA7-83A9-4DFF-B58C-CABCBFD1D74A}|http">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/ApplicationDbContext.cs">
+    <Files>
+      <File FileName="Data/ApplicationDbContext.cs" Line="3" Column="3" />
+      <File FileName="appsettings.json" />
+      <File FileName="Models/Project.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Views/Project/Create.cshtml" />
+      <File FileName="Views/Project/Details.cshtml" />
+      <File FileName="Views/Project/Index.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Comp2139_Labs">
+            <Node name="Comp2139_Labs">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Project" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Comp2139__Labs PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

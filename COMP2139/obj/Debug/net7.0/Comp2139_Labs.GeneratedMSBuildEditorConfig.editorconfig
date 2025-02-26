@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Comp2139_Labs
 build_property.RootNamespace = Comp2139_Labs
-build_property.ProjectDir = /Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/
+build_property.ProjectDir = /Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139
+build_property.MSBuildProjectDirectory = /Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139
 build_property._RazorSourceGeneratorDebug = 
 
 [/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Views/Home/About.cshtml]
@@ -28,8 +28,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Views/Project/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Views/Project/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Views/Project/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/Views/Project/Index.cshtml]
