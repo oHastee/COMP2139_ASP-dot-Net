@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139.csproj",
-      "projectName": "Comp2139",
-      "projectPath": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139.csproj",
+      "projectUniqueName": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139_Labs.csproj",
+      "projectName": "Comp2139_Labs",
+      "projectPath": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/Comp2139_Labs.csproj",
       "packagesPath": "/Users/oscarpiedrasantadiaz/.nuget/packages/",
       "outputPath": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/Comp2139/obj/",
       "projectStyle": "PackageReference",
