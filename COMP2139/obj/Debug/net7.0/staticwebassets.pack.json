@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/wwwroot/js/projectComment.js",
+      "PackagePath": "staticwebassets/js/projectComment.js"
+    },
+    {
       "Id": "/Users/oscarpiedrasantadiaz/Desktop/Comp2139/COMP2139/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

@@ -1,0 +1,6 @@
+﻿@model string
+@{
+    var maxLength = 100; // Example max length
+    var displayText = Model.Length > maxLength ? Model.Substring(0, maxLength) + "..." : Model;
+}
+<p>@Html.Encode(displayText)</p>

@@ -1,0 +1,10 @@
+﻿@model DateTime?
+
+@if (Model.HasValue)
+{
+    @Model.Value.ToString("yyyy-MM-dd") // Display date in "yyyy-MM-dd" format.
+}
+else
+{
+    <span class="text-muted">N/A</span>// Display "N/A" or similar if the date is null.
+}

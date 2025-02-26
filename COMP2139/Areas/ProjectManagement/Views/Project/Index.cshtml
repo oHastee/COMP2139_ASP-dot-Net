@@ -1,0 +1,74 @@
+﻿@model List<COMP2139_Labs.Areas.ProjectManagement.Models.Project>
+@{
+    ViewData["Title"] = "Projects";
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
+}
+
+<style>
+    .project-table th, .project-table td {
+        vertical-align: middle;
+    }
+
+    .btn-group-vertical > .btn {
+        width: 100%;
+    }
+
+    /* Additional styles for professional look */
+    .btn-custom {
+        margin-bottom: 5px; /* Spacing between buttons */
+    }
+</style>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Projects</h2>
+
+    @if (Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover project-table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Summary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var project in Model)
+                    {
+                        <tr>
+                            <td>@project.ProjectId</td>
+                            <td>@project.Name</td>
+                            <td>@project.Description</td>
+                            <td>
+                                @await Component.InvokeAsync("ProjectSummary", new { projectId = project.ProjectId })
+                            </td>
+                            <td>
+                                <div class="btn-group-vertical" role="group" aria-label="Action Buttons">
+                                    <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-outline-primary btn-custom">Details</a>
+                                    <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Edit" asp-route-id="@project.ProjectId" class="btn btn-outline-secondary btn-custom">Edit</a>
+                                    <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Delete" asp-route-id="@project.ProjectId" class="btn btn-outline-danger btn-custom">Delete</a>
+                                    <a asp-area="ProjectManagement" asp-controller="Tasks" asp-action="Index" asp-route-projectId="@project.ProjectId" class="btn btn-outline-warning">View Tasks</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Create" class="btn btn-primary">Create New Project</a>
+    }
+    else
+    {
+        <p>No Projects Available</p>
+        <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Create" class="btn btn-primary">Create New Project</a>
+    }
+
+    @if (searchPerformed && !Model.Any())
+    {
+        <p class="mt-4">No projects with the name or description "@searchString" were found.</p>
+    }
+</div>

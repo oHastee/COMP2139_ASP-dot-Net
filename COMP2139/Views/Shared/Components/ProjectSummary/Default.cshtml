@@ -1,0 +1,70 @@
+﻿@model COMP2139_Labs.Areas.ProjectManagement.Models.Project
+
+<style>
+    .project-summary .card-header {
+        background-color: #343a40; /* Bootstrap dark */
+        color: #fff;
+    }
+
+    .card-body p, .card-body h6 {
+        margin-bottom: 0.5rem;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    ul.tasks-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        ul.tasks-list li:before {
+            content: '✔';
+            margin-right: 5px;
+            color: #28a745; /* Bootstrap success color */
+        }
+
+    .tasks-section {
+        border-left: 2px solid #dee2e6; /* Bootstrap gray-300 */
+    }
+
+    .tasks-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+</style>
+
+<div class="project-summary card shadow-sm">
+    <div class="card-header">
+        <h5 class="card-title">@Model.Name</h5>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-6">
+            <div class="card-body">
+                <p class="card-text"><b>Description:</b> @Model.Description</p>
+                <p class="card-text"><b>Start Date:</b> @Model.StartDate.ToShortDateString()</p>
+                <p class="card-text"><b>End Date:</b> @Model.EndDate.ToShortDateString()</p>
+                <p class="card-text"><b>Status:</b> @Model.Status</p>
+            </div>
+        </div>
+        <div class="col-md-6 tasks-section">
+            <div class="card-body">
+                <h6 class="tasks-title">Tasks</h6>
+                @if (Model.ProjectTasks.Any())
+                {
+                    <ul class="tasks-list">
+                        @foreach (var task in Model.ProjectTasks)
+                        {
+                            <li>@task.Title - @task.Description</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p>No tasks associated with this project.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
